@@ -1,4 +1,4 @@
-#author Suman Dey (github.com/deysuman)
+#author Suman Dey (github.com/deysuman) [email.sumandey@gmail.com]
 
 import os
 os.system('python -m pip install --disable-pip-version-check -q -r requirements.txt')
