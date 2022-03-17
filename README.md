@@ -22,23 +22,21 @@ npm install -g sql-injection-detecor
 ## Using
 Import
 ```sh
-const learn = require('sql-injection-detecor');
+const sqlDetector = require('sql-injection-detecor');
 ```
 
 Then:
 
 ```sh
-let o =  learn.detectSql("2' AND ORD(MID((SELECT DISTINCT(IFNULL(CAST(schema_name AS NCHAR),0x20)) FROM INFORMATION_SCHEMA.SCHEMATA LIMIT 5,1),5,1))>1 AND 'vFAF'='vFAF")
-const d = o.then(function (res){
-    if (!err){
-        if(success){
-            console.log("Sql injection not detected")
-        }else {
-            console.log("Sql injection detected")
-        }
+let statement =  sqlDetector.detectSql("2' AND ORD(MID((SELECT DISTINCT(IFNULL(CAST(schema_name AS NCHAR),0x20)) FROM INFORMATION_SCHEMA.SCHEMATA LIMIT 5,1),5,1))>1 AND 'vFAF'='vFAF")
+statement.then(function (res){
+    if(success){
+        console.log("Sql injection not detected")
     }
-    
-})
+    else {
+        console.log("Sql injection detected")
+    }
+}).catch(err =>{console.log(err)})
 ```
 
 ## License

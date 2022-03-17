@@ -1,7 +1,9 @@
 #author Suman Dey (github.com/deysuman) [email.sumandey@gmail.com]
 
 import os
-os.system('python -m pip install --disable-pip-version-check -q -r requirements.txt')
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+os.system('python -m pip install --disable-pip-version-check -q -r {}/requirements.txt'.format(dir_path))
 
 try:
     import pandas as pd
@@ -43,8 +45,8 @@ def G_means(token_seq, c_name):
         return 0
     return sum(g_scores)/len(g_scores) if g_scores else 0 # Average
 
-tc_dataframe = pd.read_pickle('dataframe.sav')
-model = 'model.sav'
+tc_dataframe = pd.read_pickle(f'{dir_path}/dataframe.sav')
+model = f'{dir_path}/model.sav'
 
 def Check_is_sql(sql):
     # do some pre-processing remoce comment /**/, /*!num */
