@@ -1,0 +1,25 @@
+{
+  "name": "sql-injection-detector",
+  "version": "0.1.1",
+  "description": "node js sql injection detector powerd by machine learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/deysuman/sql-injection-detector"
+  },
+  "keywords": [
+    "sql-injection",
+    "sql-injection-detector",
+    "scikit-learn",
+    "machine learning"
+  ],
+  "author": "Suman Dey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deysuman/sql-injection-detector/issues",
+    "email": "email.sumandey@gmail.com"
+  }
+}
