@@ -1,7 +1,7 @@
 {
-  "name": "sql-injection-detector",
+  "name": "sql-injection-detection",
   "version": "0.1.2",
-  "description": "node js sql injection detector powerd by machine learning",
+  "description": "node js sql injection detection library powerd by machine learning",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
