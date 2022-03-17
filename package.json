@@ -1,6 +1,6 @@
 {
   "name": "sql-injection-detector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "node js sql injection detector powerd by machine learning",
   "main": "index.js",
   "scripts": {

@@ -22,7 +22,7 @@ npm install -g sql-injection-detecor
 ## Using
 Import
 ```sh
-const learn = require('./index');
+const learn = require('sql-injection-detecor');
 ```
 
 Then:
